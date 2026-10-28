@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta name="description" content="Finley Mose — Computer Science student, digital creator and founder of LUX Enterprise. Explore projects, ideas and the journey behind the work.">
+  <title>Finley Mose — Builder, Creator, Founder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#fbfaf7;--ink:#20211f;--muted:#74756f;--line:#e6e4dd;--green:#355e48;--soft:#eef1eb;--white:#fff;--serif:Georgia,"Times New Roman",serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.mono{font:500 11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}.topline{height:4px;background:var(--green)}
+    header{position:sticky;top:0;z-index:10;background:rgba(251,250,247,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(230,228,221,.85)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:15px;font-weight:800;letter-spacing:-.06em}.brand span{color:var(--green)}.navlinks{display:flex;align-items:center;gap:27px;font-size:12px;color:#55564f}.navlinks a:hover{color:var(--green)}.nav-cta{border:1px solid var(--ink);padding:10px 15px;border-radius:3px;color:var(--ink)!important}.menu-btn{display:none;border:1px solid var(--line);background:transparent;padding:8px 11px;border-radius:3px}
+    .hero{padding:88px 0 82px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:25px}.dot{width:7px;height:7px;border-radius:50%;background:#5c8868;box-shadow:0 0 0 4px #e4ebe3}.hero h1{font-size:clamp(48px,7vw,88px);line-height:.99;letter-spacing:-.085em;margin:0 0 25px;font-weight:700}.hero h1 em{font-family:var(--serif);font-weight:400;letter-spacing:-.075em;color:var(--green)}.hero-copy{font-size:16px;color:#62635d;max-width:510px;line-height:1.9}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border:1px solid var(--ink);border-radius:3px;font-size:12px;font-weight:700;transition:.2s}.btn-dark{background:var(--ink);color:white}.btn-dark:hover{background:var(--green);border-color:var(--green);transform:translateY(-2px)}.btn-light:hover{background:var(--soft);transform:translateY(-2px)}.hero-note{margin-top:33px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:20px;align-items:center;font-size:11px;color:var(--muted)}.hero-note strong{color:var(--ink);font-weight:700}.portrait-wrap{position:relative;padding:0 0 22px 22px}.portrait-wrap:before{content:"";position:absolute;left:0;bottom:0;width:65%;height:58%;background:#e7e9df;z-index:0}.portrait{position:relative;z-index:1;aspect-ratio:4/4.65;overflow:hidden;background:#e7e9df}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center}.photo-label{position:absolute;right:-13px;bottom:47px;background:var(--white);padding:13px 16px;z-index:2;box-shadow:0 8px 30px #2221}.photo-label .mono{font-size:9px}.photo-label strong{display:block;font-size:12px;margin-top:3px}.scroll-mark{position:absolute;right:0;bottom:-26px;font-size:10px;color:var(--muted);writing-mode:vertical-rl;letter-spacing:.1em}
+    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0;overflow:hidden}.ticker-inner{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}.ticker span{font:11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:#77786f}.ticker b{color:var(--green);margin-right:8px}
+    section{padding:95px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:38px}.section-head h2{font-size:clamp(34px,4vw,52px);line-height:1.06;letter-spacing:-.07em;margin:10px 0 0}.section-head p{max-width:380px;color:var(--muted);font-size:13px;margin:0}.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:85px}.side-label{border-top:1px solid var(--ink);padding-top:14px}.side-label .number{font:11px "DM Mono",monospace;color:var(--green)}.side-label h3{font-size:20px;letter-spacing:-.04em;margin:14px 0}.about-text p{font-size:15px;color:#5d5e58;line-height:1.95;margin:0 0 18px}.about-text p.lead{font-size:22px;line-height:1.55;color:var(--ink);letter-spacing:-.04em}.inline-link{color:var(--green);border-bottom:1px solid #a9b9aa;font-weight:700}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.value{padding:17px;border:1px solid var(--line);background:#fff9}.value strong{display:block;font-size:12px}.value span{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+    #projects{background:#f1f1eb}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{background:var(--paper);border:1px solid #e3e2db;min-height:300px;padding:27px;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}.project:hover{transform:translateY(-4px);border-color:#b6c4b7}.project-top{display:flex;justify-content:space-between;align-items:center}.project-index{font:11px "DM Mono",monospace;color:var(--green)}.project-type{font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.project-mark{height:95px;display:flex;align-items:center;justify-content:center;margin:20px 0 15px;background:#f1f1eb;position:relative;overflow:hidden}.project-mark:before,.project-mark:after{content:"";position:absolute;border:1px solid #d7d9cf;border-radius:50%;width:160px;height:160px}.project-mark:after{width:110px;height:110px}.mark-word{z-index:1;font-size:23px;font-weight:800;letter-spacing:-.07em}.mark-word small{font:10px "DM Mono",monospace;letter-spacing:.08em;color:var(--green);display:block;text-align:center}.project h3{font-size:25px;letter-spacing:-.06em;margin:0 0 8px}.project p{font-size:12px;line-height:1.8;color:var(--muted);margin:0 0 20px;max-width:470px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}.tag{border:1px solid var(--line);padding:5px 8px;font-size:9px;color:#65665f;border-radius:2px}.project-foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;font-weight:700}.project-foot span:last-child{color:var(--green)}
+    .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.skill-list{border-top:1px solid var(--ink)}.skill-row{padding:18px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}.skill-row strong{font-size:13px}.skill-row span{font-size:11px;color:var(--muted);text-align:right}.journey-card{padding:28px;background:var(--soft);border:1px solid #e2e6dc}.journey-card h3{font-size:24px;letter-spacing:-.05em;margin:8px 0 14px}.journey-card p{font-size:13px;color:#66675f;line-height:1.9}.milestone{border-top:1px solid #d5dbd1;padding:13px 0;display:flex;gap:16px;font-size:12px}.milestone time{font:10px "DM Mono",monospace;color:var(--green);min-width:55px}
+    #field-notes{background:#f1f1eb}.gallery-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:14px}.gallery-card{min-height:250px;background:#e3e5dd;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}.gallery-card.tall{min-height:350px;grid-row:span 2}.gallery-card.wide{grid-column:span 2;min-height:210px}.gallery-card img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}.gallery-placeholder{max-width:200px;position:relative;z-index:1}.gallery-placeholder .plus{width:35px;height:35px;display:grid;place-items:center;border:1px solid #aeb5a9;border-radius:50%;margin:0 auto 13px;color:var(--green);font-size:20px}.gallery-placeholder strong{font-size:13px;display:block}.gallery-placeholder p{font-size:10px;color:#686b62;line-height:1.6;margin:6px 0 0}.gallery-card figcaption{position:absolute;left:13px;bottom:13px;background:#fbfaf7eF;padding:8px 10px;font:9px "DM Mono",monospace;letter-spacing:.05em;text-transform:uppercase;z-index:2}.gallery-tip{font-size:11px;color:var(--muted);margin-top:17px}
+    .business-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.business-card{border:1px solid var(--line);padding:28px;background:white}.business-card .mono{color:var(--green)}.business-card h3{font-size:27px;letter-spacing:-.06em;margin:14px 0 8px}.business-card p{font-size:12px;color:var(--muted);line-height:1.8}.business-card a{display:inline-block;margin-top:13px;font-size:11px;font-weight:800;border-bottom:1px solid #aab8a9;padding-bottom:4px}.quote{margin-top:22px;padding:23px;background:#e9ede6;font:italic 18px/1.6 var(--serif);color:#3c5543}
+    .contact{background:#222521;color:#f7f6f0;padding:88px 0}.contact .mono{color:#b6c4b5}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px}.contact h2{font-size:clamp(43px,6vw,75px);letter-spacing:-.08em;line-height:1.02;margin:14px 0 22px}.contact h2 em{font-family:var(--serif);font-weight:400;color:#b8c9b8}.contact-copy{font-size:13px;color:#c0c2bb;max-width:440px;line-height:1.9}.contact-links{border-top:1px solid #484a44}.contact-link{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid #484a44;font-size:12px}.contact-link span:first-child{color:#bfc1b9}.contact-link span:last-child{font-weight:700;overflow-wrap:anywhere}.contact-link:hover span:last-child{color:#b8c9b8}.socials{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.socials a{border:1px solid #50524b;padding:8px 10px;font-size:10px;border-radius:2px;color:#e7e7e0}.socials a:hover{background:#3b493d}.contact-foot{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #484a44;padding-top:22px;margin-top:55px;color:#a9aca3;font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.07em}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}.notice{font-size:10px;color:var(--muted);margin-top:9px}
+    @media(max-width:800px){.wrap{width:min(100% - 34px,620px)}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:66px;background:var(--paper);padding:18px 24px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:12px 0;border-bottom:1px solid var(--line)}.nav-cta{margin-top:12px;text-align:center}.hero{padding:54px 0 60px}.hero-grid{grid-template-columns:1fr;gap:40px}.hero h1{font-size:clamp(49px,13vw,76px)}.hero-copy{font-size:14px}.portrait-wrap{width:min(100%,440px);margin:auto;padding-left:14px}.portrait{aspect-ratio:4/4.2}.photo-label{right:-5px}.ticker-inner{justify-content:flex-start;gap:12px 23px}.section-head{align-items:flex-start;flex-direction:column;margin-bottom:28px}.section-head p{max-width:500px}section{padding:67px 0}.about-grid{grid-template-columns:1fr;gap:28px}.values{grid-template-columns:1fr}.project-grid,.skills-grid,.business-grid,.contact-grid{grid-template-columns:1fr}.project{min-height:285px;padding:22px}.skills-grid,.contact-grid{gap:30px}.gallery-grid{grid-template-columns:1fr 1fr;gap:9px}.gallery-card{min-height:210px;padding:12px}.gallery-card.tall{min-height:290px;grid-row:span 1}.gallery-card.wide{grid-column:span 2;min-height:190px}.contact{padding:68px 0}.contact-foot{flex-direction:column;margin-top:35px}.quote{font-size:16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Finley Mose home">FINLEY<span>.</span>MOSE</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">Menu +</button>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#story">My story</a><a href="#projects">Projects</a><a href="#field-notes">Field notes</a><a href="#journey">Journey</a><a class="nav-cta" href="#contact">Let's connect ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <div class="eyebrow"><span class="dot"></span><span class="mono">Computer science · Creativity · Enterprise</span></div>
+        <h1>Curious by nature.<br><em>Building by choice.</em></h1>
+        <p class="hero-copy">I'm Finley Mose — a Kenyan Computer Science student, digital creator and entrepreneur. I'm interested in how technology can turn ambitious ideas into useful products and real-world solutions.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#projects">Explore my work <span>↘</span></a><a class="btn btn-light" href="#story">A little about me <span>↗</span></a></div>
+        <div class="hero-note"><span><strong>Based in Kenya</strong></span><span>Learning. Building. Iterating.</span></div>
+      </div>
+      <div class="portrait-wrap reveal">
+        <div class="portrait"><img src="assets/finley-mose-portrait.png" alt="Portrait of Finley Mose in a computer workspace"></div>
+        <div class="photo-label"><span class="mono">The person behind the projects</span><strong>Finley Mose ↗</strong></div>
+        <div class="scroll-mark">SCROLL TO EXPLORE ↓</div>
+      </div>
+    </div>
+  </section>
+  <div class="ticker"><div class="wrap ticker-inner"><span><b>01</b> Technology</span><span><b>02</b> Entrepreneurship</span><span><b>03</b> Product thinking</span><span><b>04</b> Continuous learning</span><span><b>05</b> Building in public</span></div></div>
+  <section id="story">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="mono">01 / The person</div><h2>A story still<br>being written.</h2></div><p>Not a finished story. A growing body of ideas, experiments, lessons and work — one step at a time.</p></div>
+      <div class="about-grid">
+        <div class="side-label reveal"><span class="number">ABOUT FINLEY</span><h3>Driven by curiosity.<br>Grounded in learning.</h3><span class="mono">Kenya · 2026—</span></div>
+        <div class="about-text reveal">
+          <p class="lead">I believe the best way to learn technology is to get hands-on: explore a problem, build a version, test it, and keep improving.</p>
+          <p>I'm a first-year Computer Science student at Kisii University, with interests spanning software development, artificial intelligence, databases and the wider digital economy. Alongside my studies, I'm exploring entrepreneurship and working on projects that connect technology with practical needs.</p>
+          <p>My long-term ambition is to create useful digital products and build ventures with a reach beyond borders. This portfolio is a living record of that process — including the things that work, the lessons that don't, and what comes next.</p>
+          <p>I'm always open to meaningful conversations, learning opportunities and collaborations. <a class="inline-link" href="#contact">Let's connect.</a></p>
+          <div class="values"><div class="value"><strong>Build with purpose</strong><span>Start with a real problem.</span></div><div class="value"><strong>Stay teachable</strong><span>Curiosity over ego.</span></div><div class="value"><strong>Think long-term</strong><span>Consistency compounds.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="mono">02 / Selected work</div><h2>Ideas in motion.</h2></div><p>A selection of products and experiments I'm building or exploring. Project status and public links can be added as each one is ready to share.</p></div>
+      <div class="project-grid">
+        <article class="project reveal"><div class="project-top"><span class="project-index">PROJECT / 001</span><span class="project-type">Product concept</span></div><div class="project-mark"><div class="mark-word">LUX <span style="color:#355e48">FINNEX</span><small>WHERE PRICE IS ALWAYS RIGHT</small></div></div><h3>LUX Finnex</h3><p>A price-comparison concept focused on helping people explore products and compare prices across retailers. The vision is to make shopping decisions more informed and transparent.</p><div class="tags"><span class="tag">Price comparison</span><span class="tag">Product thinking</span><span class="tag">E-commerce</span></div><div class="project-foot"><span>Explore the concept</span><span>Details to come ↗</span></div></article>
+        <article class="project reveal"><div class="project-top"><span class="project-index">PROJECT / 002</span><span class="project-type">Digital services</span></div><div class="project-mark"><div class="mark-word">LUX <span style="color:#355e48">SERVICES</span><small>CONNECTING NEEDS & SOLUTIONS</small></div></div><h3>LUX Services</h3><p>A digital-services marketplace concept designed around making services easier to discover and access, with a Kenya-focused perspective.</p><div class="tags"><span class="tag">Marketplace</span><span class="tag">Web experience</span><span class="tag">Entrepreneurship</span></div><div class="project-foot"><span>Explore the concept</span><span>Details to come ↗</span></div></article>
+        <article class="project reveal"><div class="project-top"><span class="project-index">PROJECT / 003</span><span class="project-type">Farm technology</span></div><div class="project-mark"><div class="mark-word">Dairy<span style="color:#355e48">Flow</span><small>DAIRY FARM MANAGEMENT</small></div></div><h3>DairyFlow</h3><p>A dairy-farm management application concept focused on organising farm information and making everyday record-keeping more practical for users.</p><div class="tags"><span class="tag">Farm management</span><span class="tag">Data</span><span class="tag">Web app</span></div><div class="project-foot"><span>Explore the concept</span><span>Details to come ↗</span></div></article>
+        <article class="project reveal"><div class="project-top"><span class="project-index">PROJECT / 004</span><span class="project-type">Offline AI experiment</span></div><div class="project-mark"><div class="mark-word">LUX<span style="color:#355e48"> AI</span><small>INTELLIGENCE, OFFLINE</small></div></div><h3>Offline AI USB</h3><p>A personal experiment running local language and vision models from a USB drive — exploring how AI tools can work without relying on a constant internet connection.</p><div class="tags"><span class="tag">Local AI</span><span class="tag">Qwen</span><span class="tag">llama.cpp</span></div><div class="project-foot"><span>Technical experiment</span><span>Details to come ↗</span></div></article>
+      </div>
+      <p class="notice">Project descriptions are intentionally high-level. Add verified demos, repositories, screenshots and current status before publishing those details.</p>
+    </div>
+  </section>
+  <section id="journey">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="mono">03 / Skills & direction</div><h2>Learning in public.</h2></div><p>The skills I'm developing, the education shaping my thinking, and the milestones I'll document as the journey continues.</p></div>
+      <div class="skills-grid">
+        <div class="skill-list reveal">
+          <div class="skill-row"><strong>Python</strong><span>Programming & experimentation</span></div>
+          <div class="skill-row"><strong>Web development</strong><span>Building for the browser</span></div>
+          <div class="skill-row"><strong>Databases</strong><span>Data & application foundations</span></div>
+          <div class="skill-row"><strong>Artificial intelligence</strong><span>Learning & local-model experiments</span></div>
+          <div class="skill-row"><strong>Product thinking</strong><span>Connecting ideas to user needs</span></div>
+          <p class="notice">This is a snapshot of stated interests and areas of work, not a certification or proficiency ranking.</p>
+        </div>
+        <div class="journey-card reveal">
+          <span class="mono">Education & milestones</span><h3>The next chapter is being built.</h3>
+          <div class="milestone"><time>2025</time><div><strong>Secondary education</strong><br><span class="mono">Segero Adventist High School</span></div></div>
+          <div class="milestone"><time>2026—</time><div><strong>Computer Science</strong><br><span class="mono">Kisii University · First year</span></div></div>
+          <div class="milestone"><time>NEXT</time><div><strong>Your next milestone</strong><br><span style="color:var(--muted)">Add a real achievement, launch or learning milestone here.</span></div></div>
+          <p>As new projects ship and experiences happen, this timeline will grow with verifiable details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="field-notes">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="mono">04 / Field notes</div><h2>Life beyond the screen.</h2></div><p>A visual journal of the people, places, events and small moments that shape the work. These spaces are ready for your real photos.</p></div>
+      <div class="gallery-grid reveal">
+        <figure class="gallery-card tall"><div class="gallery-placeholder"><div class="plus">+</div><strong>Events & conferences</strong><p>Add a real event photograph, its name, date and one thing you learned.</p></div><figcaption>Event / Add your photo</figcaption></figure>
+        <figure class="gallery-card"><div class="gallery-placeholder"><div class="plus">+</div><strong>Behind the build</strong><p>Desk setup, debugging, late-night experiments or a work-in-progress.</p></div><figcaption>Process / Add your photo</figcaption></figure>
+        <figure class="gallery-card"><div class="gallery-placeholder"><div class="plus">+</div><strong>Campus life</strong><p>A real moment from your learning journey.</p></div><figcaption>Learning / Add your photo</figcaption></figure>
+        <figure class="gallery-card wide"><div class="gallery-placeholder"><div class="plus">+</div><strong>Community & collaboration</strong><p>Workshops, team moments, demonstrations or people you learned alongside. Add only events you actually attended.</p></div><figcaption>People & ideas / Add your photo</figcaption></figure>
+      </div>
+      <p class="gallery-tip">To add a photo: place it in the assets folder and replace a gallery placeholder in index.html with an image tag and a truthful caption. Keep a copy of the original images.</p>
+    </div>
+  </section>
+  <section id="business">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="mono">05 / Enterprise</div><h2>Building beyond myself.</h2></div><p>Entrepreneurship is part of the journey: learning how to turn ideas into products that can serve real people.</p></div>
+      <div class="business-grid">
+        <div class="business-card reveal"><span class="mono">PERSONAL VENTURE / 01</span><h3>LUX Enterprise</h3><p>The broader entrepreneurial identity behind my interest in technology, digital products and service-led ventures. This portfolio is a place to document the work as it develops.</p><a href="#projects">Explore projects ↗</a></div>
+        <div class="business-card reveal"><span class="mono">OPEN TO CONVERSATION</span><h3>Let's make useful things.</h3><p>I'm interested in connecting with fellow builders, mentors, organisations and people exploring practical uses of technology.</p><a href="mailto:finleymose591@gmail.com?subject=Let's%20connect">Start a conversation ↗</a></div>
+      </div>
+      <div class="quote reveal">“The goal is not just to have ideas. It is to keep learning how to turn them into something useful.”</div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal"><span class="mono">06 / Get in touch</span><h2>Good things<br>start with a <em>hello.</em></h2><p class="contact-copy">Have an opportunity, a project idea, a question or simply want to connect? Reach out. I'm always open to thoughtful conversations and learning from others.</p><div class="socials"><a href="https://github.com/lux_finnex" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.instagram.com/lux_finnex/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.tiktok.com/@lux_finnex" target="_blank" rel="noreferrer">TikTok ↗</a><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook ↗</a><a href="https://www.threads.net/@lux_finnex" target="_blank" rel="noreferrer">Threads ↗</a></div><p class="notice" style="color:#a9aca3">LinkedIn and Facebook links currently point to their main sites; replace them with your exact profile URLs.</p></div>
+        <div class="contact-links reveal">
+          <a class="contact-link" href="mailto:finleymose591@gmail.com"><span>Email</span><span>finleymose591@gmail.com ↗</span></a>
+          <a class="contact-link" href="tel:+254748642352"><span>Phone</span><span>+254 748 642 352 ↗</span></a>
+          <a class="contact-link" href="https://wa.me/254754415755" target="_blank" rel="noreferrer"><span>WhatsApp</span><span>Message me ↗</span></a>
+          <div class="contact-link"><span>Based in</span><span>Kenya</span></div>
+          <div style="margin-top:24px"><span class="mono">A note to future collaborators</span><p style="font:italic 19px/1.6 Georgia,serif;color:#d4d8ce">I may still be early in the journey, but I'm serious about the work and committed to getting better.</p></div>
+        </div>
+      </div>
+      <div class="contact-foot"><span>© <span id="year"></span> Finley Mose</span><span>Made with curiosity in Kenya</span><a href="#home">Back to top ↑</a></div>
+    </div>
+  </section>
+</main>
+<script>
+  const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+  menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'Close −':'Menu +'});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='Menu +'}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
