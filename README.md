@@ -82,7 +82,7 @@ No stock photograph is presented as Finley or as evidence of attending a specifi
 - Phone: +254 748 642 352
 - WhatsApp: +254 734 382 054
 - Email: finleymose591@gmail.com
-- GitHub: https://github.com/lux_finnex
+- GitHub: https://github.com/luxfinnex
 - LinkedIn: https://www.linkedin.com/in/finley-m-82b1703a2/
 - Instagram: https://www.instagram.com/lux_finnex/
 - TikTok: https://www.tiktok.com/@lux_finnex

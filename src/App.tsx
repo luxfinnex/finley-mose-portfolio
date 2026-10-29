@@ -638,7 +638,7 @@ export default function App() {
                 </span>
               </a>
               <a
-                href="https://github.com/lux_finnex"
+                href="https://github.com/luxfinnex"
                 target="_blank"
                 rel="noreferrer"
               >
