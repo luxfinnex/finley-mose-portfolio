@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><radialGradient id="b" cx=".8" cy=".2" r=".7"><stop stop-color="#182b4b"/><stop offset="1" stop-color="#05070b"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="url(#b)"/><path d="M70 70h1060v490H70Z" fill="none" stroke="#d6ad62" opacity=".25"/>
+  <text x="95" y="145" fill="#d6ad62" font-family="Arial" font-size="18" letter-spacing="7">FOUNDER OF LUX ENTERPRISE</text>
+  <text x="90" y="330" fill="#f4f1ea" font-family="Georgia" font-size="122">FINLEY MOSE</text>
+  <text x="95" y="410" fill="#8e97a4" font-family="Georgia" font-size="38" font-style="italic">One Vision. Endless Possibilities.</text>
+  <text x="95" y="510" fill="#68717e" font-family="Arial" font-size="18">COMPUTER SCIENCE · SOFTWARE · AI · ENTREPRENEURSHIP</text>
+</svg>
